@@ -32,7 +32,9 @@
        console.log(data.results[count]);// test output data.results[0]
        // take a "data.results[count]"
        genre.innerText ="[ジャンル] "+data.results[count].category;
+       genre.style.display="block";
        diff.innerText ="[難易度] "+data.results[count].difficulty;
+       diff.style.display="block";
        qs.innerText = data.results[count].question;
        qsNum.innerText="問題"+qsCount;
        buildAnsChoises();
